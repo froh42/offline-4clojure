@@ -6,4 +6,4 @@
   (:use clojure.test)
   (:use offline-4clojure.core))
 
-(?? (do (deftest test4clj-0 (is (= (list __) '(:a :b :c))))) __)
+(?? (do (deftest test4clj-0 (is (= (list __) '(:a :b :c))))) :a :b :c)

@@ -8,4 +8,4 @@
 
 (??
   (do (deftest test4clj-0 (is (= __ (.toUpperCase "hello world")))))
-  __)
+  "HELLO WORLD")

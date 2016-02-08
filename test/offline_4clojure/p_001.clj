@@ -6,4 +6,4 @@
   (:use clojure.test)
   (:use offline-4clojure.core))
 
-(?? (do (deftest test4clj-0 (is (= __ true)))) __)
+(offline-4clojure.core/?? (do (deftest test4clj-0 (is (= __ true)))) true)
