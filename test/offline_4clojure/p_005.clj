@@ -11,4 +11,4 @@
   (do
     (deftest test4clj-0 (is (= __ (conj '(2 3 4) 1))))
     (deftest test4clj-1 (is (= __ (conj '(3 4) 2 1)))))
-  __)
+  '(1 2 3 4))
