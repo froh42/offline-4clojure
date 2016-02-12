@@ -12,4 +12,4 @@
     (deftest test4clj-1 (is (= (__ 3) 6)))
     (deftest test4clj-2 (is (= (__ 11) 22)))
     (deftest test4clj-3 (is (= (__ 7) 14))))
-  __)
+  (partial * 2))

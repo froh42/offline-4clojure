@@ -6,4 +6,4 @@
   (:use clojure.test)
   (:use offline-4clojure.core))
 
-(?? (do (deftest test4clj-0 (is (= __ (map #(+ % 5) '(1 2 3)))))) __)
+(?? (do (deftest test4clj-0 (is (= __ (map #(+ % 5) '(1 2 3)))))) '(6 7 8))

@@ -11,4 +11,4 @@
     (deftest
       test4clj-0
       (is (= {:a 1, :b 2, :c 3} (conj {:a 1} __ [:c 3])))))
-  __)
+  {:b 2})

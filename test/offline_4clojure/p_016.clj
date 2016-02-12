@@ -11,4 +11,4 @@
     (deftest test4clj-0 (is (= (__ "Dave") "Hello, Dave!")))
     (deftest test4clj-1 (is (= (__ "Jenn") "Hello, Jenn!")))
     (deftest test4clj-2 (is (= (__ "Rhea") "Hello, Rhea!"))))
-  __)
+  #(str "Hello, " % "!"))

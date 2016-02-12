@@ -10,4 +10,4 @@
   (do
     (deftest test4clj-0 (is (= __ (conj [1 2 3] 4))))
     (deftest test4clj-1 (is (= __ (conj [1 2] 3 4)))))
-  __)
+  [1 2 3 4])

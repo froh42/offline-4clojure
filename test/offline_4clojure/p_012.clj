@@ -11,4 +11,4 @@
     (deftest test4clj-0 (is (= __ (first '(3 2 1)))))
     (deftest test4clj-1 (is (= __ (second [2 3 4]))))
     (deftest test4clj-2 (is (= __ (last (list 1 2 3))))))
-  __)
+  3)

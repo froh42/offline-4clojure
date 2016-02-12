@@ -12,4 +12,4 @@
     (deftest test4clj-1 (is (= __ ((fn [x] (+ x 5)) 3))))
     (deftest test4clj-2 (is (= __ (#(+ % 5) 3))))
     (deftest test4clj-3 (is (= __ ((partial + 5) 3)))))
-  __)
+  8)

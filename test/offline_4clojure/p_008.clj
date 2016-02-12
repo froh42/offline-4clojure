@@ -14,4 +14,4 @@
     (deftest
       test4clj-1
       (is (= __ (clojure.set/union #{:c :b :a} #{:c :b :d})))))
-  __)
+  (set '(:a :b :d :c)))
