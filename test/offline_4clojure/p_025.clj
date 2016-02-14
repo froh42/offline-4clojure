@@ -12,4 +12,4 @@
     (deftest test4clj-1 (is (= (__ [4 2 1 6]) '(1))))
     (deftest test4clj-2 (is (= (__ [2 2 4 6]) '())))
     (deftest test4clj-3 (is (= (__ [1 1 1 3]) '(1 1 1 3)))))
-  __)
+  #(filter odd? %))

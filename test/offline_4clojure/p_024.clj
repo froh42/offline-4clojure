@@ -13,4 +13,4 @@
     (deftest test4clj-2 (is (= (__ #{1 4 2}) 7)))
     (deftest test4clj-3 (is (= (__ '(0 0 -1)) -1)))
     (deftest test4clj-4 (is (= (__ '(1 10 3)) 14))))
-  __)
+  #(reduce + %))

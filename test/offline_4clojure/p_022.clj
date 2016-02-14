@@ -6,6 +6,12 @@
   (:use clojure.test)
   (:use offline-4clojure.core))
 
+(defn my-cnt [s]
+  (loop [n 0 s s]
+    (if (empty? s)
+      n
+      (recur (inc n) (rest s)))))
+
 (??
   (do
     (deftest test4clj-0 (is (= (__ '(1 2 3 3 1)) 5)))
@@ -13,4 +19,4 @@
     (deftest test4clj-2 (is (= (__ [[1 2] [3 4] [5 6]]) 3)))
     (deftest test4clj-3 (is (= (__ '(13)) 1)))
     (deftest test4clj-4 (is (= (__ '(:a :b :c)) 3))))
-  __)
+  my-cnt)

@@ -6,6 +6,7 @@
   (:use clojure.test)
   (:use offline-4clojure.core))
 
+
 (??
   (do
     (deftest test4clj-0 (is (= (__ [1 2 3 4 5]) [5 4 3 2 1])))
@@ -13,4 +14,4 @@
     (deftest
       test4clj-2
       (is (= (__ [[1 2] [3 4] [5 6]]) [[5 6] [3 4] [1 2]]))))
-  __)
+  #(reduce conj '() %))
