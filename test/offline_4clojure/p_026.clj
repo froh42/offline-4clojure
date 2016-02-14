@@ -11,4 +11,14 @@
     (deftest test4clj-0 (is (= (__ 3) '(1 1 2))))
     (deftest test4clj-1 (is (= (__ 6) '(1 1 2 3 5 8))))
     (deftest test4clj-2 (is (= (__ 8) '(1 1 2 3 5 8 13 21)))))
-  __)
+  #(loop [n % s '(1)]
+    (print "s: " s "\n")
+    (if (<= n 1)
+      (reverse s)
+      (recur (dec n) (conj s (+ (first s) (or (second s) 0)))))
+    )
+  )
+
+
+
+
